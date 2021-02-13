@@ -1,0 +1,60 @@
+<Content>
+	<Font Name="DemoFont" Filename="./Content/Fonts/DemoFonts.h" LetterWidth="20" LetterHeight="20" AsciiOffset="32" />
+	
+	<Texture Name="BackToMainMenuBtn" Filename="./Content/Textures/BackToMainMenuBtn.png" />
+	
+	<Texture Name="Adiantum" Filename="./Content/Models/Adiantum/Adiantum D.png" />
+	<Model Name="Adiantum" Texture="Adiantum" Filename="./Content/Models/Adiantum/Adiantum.obj" />
+	
+	<Texture Name="PalmTree" Filename="./Content/Models/PalmTree/PalmTree.png" />
+	<Model Name="PalmTree" Texture="PalmTree" Filename="./Content/Models/PalmTree/PalmTree.obj" />
+	
+	<Texture Name="WatchTower" Filename="./Content/Models/WatchTower/WatchTower.png" />
+	<Model Name="WatchTower" Texture="WatchTower" Filename="./Content/Models/WatchTower/WatchTower.obj" />
+	
+	<Texture Name="WineBarrel" Filename="./Content/Models/WineBarrel/WineBarrel.png" />
+	<Model Name="WineBarrel" Texture="WineBarrel" Filename="./Content/Models/WineBarrel/WineBarrel.obj" />
+	
+	<Texture Name="Boat" Filename="./Content/Models/Boat/Boat.png" />
+	<Model Name="Boat" Texture="Boat" Filename="./Content/Models/Boat/Boat.obj" />
+	
+	<Model Name="Sora" Texture="" Filename="./Content/Models/Sora/Sora.obj">
+		<Bounds>
+			<Min><X>-0.2</X> <Y>0</Y> <Z>-0.2</Z></Min>
+			<Max><X>0.2</X> <Y>1.5</Y> <Z>0.2</Z></Max>
+		</Bounds>
+	</Model>
+		
+	<Model Name="Lightbulb" Texture="" Filename="./Content/Models/Lightbulb/Lightbulb.obj" />
+	<Model Name="Sheep" Texture="" Filename="./Content/Models/Sheep/Sheep.obj" />
+	
+	<Shader Name="Red" Vert="./Content/Shaders/Red/v.glsl" Frag="./Content/Shaders/Red/f.glsl" />
+	
+	<!--- Ground Textures -->
+	<Texture Name="Ground0" Filename="./Content/Textures/Ground0.png" />
+	<Texture Name="Ground1" Filename="./Content/Textures/Ground1.png" />
+	<Texture Name="Ground2" Filename="./Content/Textures/Ground2.png" />
+	<Texture Name="Ground3" Filename="./Content/Textures/Ground3.jpg" />
+	<Texture Name="Terrain_0" Filename="./Content/Textures/Terrain_0.png" />
+	<Texture Name="Terrain_1" Filename="./Content/Textures/Terrain_1.png" />
+	<Texture Name="Terrain_2" Filename="./Content/Textures/Terrain_2.png" />
+	<Texture Name="Terrain_3" Filename="./Content/Textures/Terrain_3.png" />
+	
+	
+	<TerrainMaterial Name="DemoTerrain">
+		<Controller>Terrain_3</Controller>
+		<Diffuse ID="0">Ground0</Diffuse>
+		<Diffuse ID="1">Ground1</Diffuse>
+		<Diffuse ID="2">Ground2</Diffuse>
+		<Diffuse ID="3">Ground3</Diffuse>
+	</TerrainMaterial>
+	
+	
+	<!--- Water Texture -->
+	<Texture Name="Water" Filename="./Content/Textures/Water.png" />
+	
+	<Terrain Name="Terrain_3">
+		<Material>DemoTerrain</Material>
+		<Heightmap>./Content/Textures/test.png</Heightmap>
+	</Terrain>
+</Content>

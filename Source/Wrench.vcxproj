@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A11596C-CABE-45D3-A5C7-49D282821153}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Wrench</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin64</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin64</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4018;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\micha\Documents\Projects\Wrench\Content;C:\Users\micha\Documents\Projects\Wrench\Source;C:\Users\micha\Documents\Projects\Wrench\Source\Lib;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\TinyXML;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SOIL;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SDL_net;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\HappyHTTP;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\GLee;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Utils;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\TCP;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Shaders;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Models;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Materials;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Datatypes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Cameras;C:\Users\micha\Documents\Projects\Wrench\Source\Game;C:\Users\micha\Documents\Projects\Wrench\Source\Game\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Scenes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\AiStates;C:\Users\micha\Documents\Projects\Wrench\Source\Game\ActionStates;C:\Users\micha\Documents\Projects\Wrench\Source\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4018;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\micha\Documents\Projects\Wrench\Content;C:\Users\micha\Documents\Projects\Wrench\Source;C:\Users\micha\Documents\Projects\Wrench\Source\Lib;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\TinyXML;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SOIL;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SDL_net;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\HappyHTTP;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\GLee;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Utils;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\TCP;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Shaders;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Models;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Materials;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Datatypes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Cameras;C:\Users\micha\Documents\Projects\Wrench\Source\Game;C:\Users\micha\Documents\Projects\Wrench\Source\Game\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Scenes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\AiStates;C:\Users\micha\Documents\Projects\Wrench\Source\Game\ActionStates;C:\Users\micha\Documents\Projects\Wrench\Source\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\micha\Documents\Projects\Wrench\Content;C:\Users\micha\Documents\Projects\Wrench\Source;C:\Users\micha\Documents\Projects\Wrench\Source\Lib;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\TinyXML;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SOIL;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SDL_net;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\HappyHTTP;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\GLee;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Utils;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\TCP;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Shaders;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Models;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Materials;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Datatypes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Cameras;C:\Users\micha\Documents\Projects\Wrench\Source\Game;C:\Users\micha\Documents\Projects\Wrench\Source\Game\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Scenes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\AiStates;C:\Users\micha\Documents\Projects\Wrench\Source\Game\ActionStates;C:\Users\micha\Documents\Projects\Wrench\Source\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\micha\Documents\Projects\Wrench\Content;C:\Users\micha\Documents\Projects\Wrench\Source;C:\Users\micha\Documents\Projects\Wrench\Source\Lib;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\TinyXML;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SOIL;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\SDL_net;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\HappyHTTP;C:\Users\micha\Documents\Projects\Wrench\Source\Lib\GLee;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Utils;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\TCP;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Shaders;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Models;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Materials;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Datatypes;C:\Users\micha\Documents\Projects\Wrench\Source\Header Files\Cameras;C:\Users\micha\Documents\Projects\Wrench\Source\Game;C:\Users\micha\Documents\Projects\Wrench\Source\Game\UI;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Scenes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\Nodes;C:\Users\micha\Documents\Projects\Wrench\Source\Game\AiStates;C:\Users\micha\Documents\Projects\Wrench\Source\Game\ActionStates;C:\Users\micha\Documents\Projects\Wrench\Source\Engine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;Winmm.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\BasicMaterial.cpp" />
+    <ClCompile Include="Engine\BasicShader.cpp" />
+    <ClCompile Include="Engine\BoundingBox.cpp" />
+    <ClCompile Include="Engine\BoundingSphere.cpp" />
+    <ClCompile Include="Engine\CallbackManager.cpp" />
+    <ClCompile Include="Engine\Camera.cpp" />
+    <ClCompile Include="Engine\Color3.cpp" />
+    <ClCompile Include="Engine\Color4.cpp" />
+    <ClCompile Include="Engine\ContentManager.cpp" />
+    <ClCompile Include="Engine\FollowCamera.cpp" />
+    <ClCompile Include="Engine\Font.cpp" />
+    <ClCompile Include="Engine\HTTPTexture.cpp" />
+    <ClCompile Include="Engine\KeyboardState.cpp" />
+    <ClCompile Include="Engine\Light.cpp" />
+    <ClCompile Include="Engine\main.cpp" />
+    <ClCompile Include="Engine\Material.cpp" />
+    <ClCompile Include="Engine\Matrix.cpp" />
+    <ClCompile Include="Engine\MissingModel.cpp" />
+    <ClCompile Include="Engine\Model.cpp" />
+    <ClCompile Include="Engine\ModelNode.cpp" />
+    <ClCompile Include="Engine\ModelObj.cpp" />
+    <ClCompile Include="Engine\ModelPMD.cpp" />
+    <ClCompile Include="Engine\MouseState.cpp" />
+    <ClCompile Include="Engine\Node.cpp" />
+    <ClCompile Include="Engine\Packet.cpp" />
+    <ClCompile Include="Engine\PhysicsNode.cpp" />
+    <ClCompile Include="Engine\Plane.cpp" />
+    <ClCompile Include="Engine\Quaternion.cpp" />
+    <ClCompile Include="Engine\RailCamera.cpp" />
+    <ClCompile Include="Engine\Ray.cpp" />
+    <ClCompile Include="Engine\Rect.cpp" />
+    <ClCompile Include="Engine\RenderTarget.cpp" />
+    <ClCompile Include="Engine\Scene.cpp" />
+    <ClCompile Include="Engine\Shader.cpp" />
+    <ClCompile Include="Engine\SkyBox.cpp" />
+    <ClCompile Include="Engine\TCPSocket.cpp" />
+    <ClCompile Include="Engine\TCPSocketSet.cpp" />
+    <ClCompile Include="Engine\Terrain.cpp" />
+    <ClCompile Include="Engine\TerrainMaterial.cpp" />
+    <ClCompile Include="Engine\Texture.cpp" />
+    <ClCompile Include="Engine\Transform.cpp" />
+    <ClCompile Include="Engine\UI.cpp" />
+    <ClCompile Include="Engine\UIElement.cpp" />
+    <ClCompile Include="Engine\UIString.cpp" />
+    <ClCompile Include="Engine\Vector2.cpp" />
+    <ClCompile Include="Engine\Vector3.cpp" />
+    <ClCompile Include="Engine\Vector4.cpp" />
+    <ClCompile Include="Engine\VertexArray.cpp" />
+    <ClCompile Include="Engine\Viewport.cpp" />
+    <ClCompile Include="Engine\Water.cpp" />
+    <ClCompile Include="Engine\Waypoint.cpp" />
+    <ClCompile Include="Engine\WidgetNode.cpp" />
+    <ClCompile Include="Engine\WMath.cpp" />
+    <ClCompile Include="Engine\WorldChunkNode.cpp" />
+    <ClCompile Include="Engine\Wrench.cpp" />
+    <ClCompile Include="Game\ActionStates\ActionMoveToPoint.cpp" />
+    <ClCompile Include="Game\ActionStates\ActionState.cpp" />
+    <ClCompile Include="Game\AiStates\AIFollowPathState.cpp" />
+    <ClCompile Include="Game\AiStates\AIState.cpp" />
+    <ClCompile Include="Game\AiStates\AIWanderState.cpp" />
+    <ClCompile Include="Game\AiStates\AIWatchNodeState.cpp" />
+    <ClCompile Include="Game\Nodes\CreatureNode.cpp" />
+    <ClCompile Include="Game\Nodes\PlayerNode.cpp" />
+    <ClCompile Include="Game\Scenes\DemoScene.cpp" />
+    <ClCompile Include="Game\Scenes\LevelSelectScene.cpp" />
+    <ClCompile Include="Game\Scenes\MainMenuScene.cpp" />
+    <ClCompile Include="Game\UI\HealthBar.cpp" />
+    <ClCompile Include="Lib\GLee\GLee.c" />
+    <ClCompile Include="Lib\HappyHTTP\happyhttp.cpp" />
+    <ClCompile Include="Lib\SDL_net\SDLnet.c" />
+    <ClCompile Include="Lib\SDL_net\SDLnetselect.c" />
+    <ClCompile Include="Lib\SDL_net\SDLnetTCP.c" />
+    <ClCompile Include="Lib\SDL_net\SDLnetUDP.c" />
+    <ClCompile Include="Lib\SOIL\image_DXT.c" />
+    <ClCompile Include="Lib\SOIL\image_helper.c" />
+    <ClCompile Include="Lib\SOIL\SOIL.c" />
+    <ClCompile Include="Lib\SOIL\stb_image_aug.c" />
+    <ClCompile Include="Lib\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="Lib\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Lib\TinyXML\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\ActionStates\ActionMoveToPoint.h" />
+    <ClInclude Include="Game\ActionStates\ActionState.h" />
+    <ClInclude Include="Game\AiStates\AIFollowPathState.h" />
+    <ClInclude Include="Game\AiStates\AIState.h" />
+    <ClInclude Include="Game\AiStates\AIWanderState.h" />
+    <ClInclude Include="Game\AiStates\AIWatchNodeState.h" />
+    <ClInclude Include="Game\Enums.h" />
+    <ClInclude Include="Game\Nodes\CreatureNode.h" />
+    <ClInclude Include="Game\Nodes\PhysicsNode.h" />
+    <ClInclude Include="Game\Nodes\PlayerNode.h" />
+    <ClInclude Include="Game\Scenes\DemoScene.h" />
+    <ClInclude Include="Game\Scenes\LevelSelectScene.h" />
+    <ClInclude Include="Game\Scenes\MainMenuScene.h" />
+    <ClInclude Include="Game\UI\HealthBar.h" />
+    <ClInclude Include="Header Files\Cameras\Camera.h" />
+    <ClInclude Include="Header Files\Cameras\FollowCamera.h" />
+    <ClInclude Include="Header Files\Cameras\RailCamera.h" />
+    <ClInclude Include="Header Files\Datatypes\BoundingBox.h" />
+    <ClInclude Include="Header Files\Datatypes\BoundingSphere.h" />
+    <ClInclude Include="Header Files\Datatypes\Color3.h" />
+    <ClInclude Include="Header Files\Datatypes\Color4.h" />
+    <ClInclude Include="Header Files\Datatypes\Font.h" />
+    <ClInclude Include="Header Files\Datatypes\HTTPTexture.h" />
+    <ClInclude Include="Header Files\Datatypes\KeyboardState.h" />
+    <ClInclude Include="Header Files\Datatypes\Matrix.h" />
+    <ClInclude Include="Header Files\Datatypes\MouseState.h" />
+    <ClInclude Include="Header Files\Datatypes\Plane.h" />
+    <ClInclude Include="Header Files\Datatypes\Quaternion.h" />
+    <ClInclude Include="Header Files\Datatypes\Range.h" />
+    <ClInclude Include="Header Files\Datatypes\Ray.h" />
+    <ClInclude Include="Header Files\Datatypes\Rect.h" />
+    <ClInclude Include="Header Files\Datatypes\SkyBox.h" />
+    <ClInclude Include="Header Files\Datatypes\Terrain.h" />
+    <ClInclude Include="Header Files\Datatypes\Texture.h" />
+    <ClInclude Include="Header Files\Datatypes\Transform.h" />
+    <ClInclude Include="Header Files\Datatypes\Vector2.h" />
+    <ClInclude Include="Header Files\Datatypes\Vector3.h" />
+    <ClInclude Include="Header Files\Datatypes\Vector4.h" />
+    <ClInclude Include="Header Files\Datatypes\Vertex.h" />
+    <ClInclude Include="Header Files\Datatypes\Water.h" />
+    <ClInclude Include="Header Files\Light.h" />
+    <ClInclude Include="Header Files\Materials\BasicMaterial.h" />
+    <ClInclude Include="Header Files\Materials\Material.h" />
+    <ClInclude Include="Header Files\Materials\TerrainMaterial.h" />
+    <ClInclude Include="Header Files\Models\MissingModel.h" />
+    <ClInclude Include="Header Files\Models\Model.h" />
+    <ClInclude Include="Header Files\Models\ModelObj.h" />
+    <ClInclude Include="Header Files\Models\ModelPMD.h" />
+    <ClInclude Include="Header Files\Nodes\ModelNode.h" />
+    <ClInclude Include="Header Files\Nodes\Node.h" />
+    <ClInclude Include="Header Files\Nodes\WidgetNode.h" />
+    <ClInclude Include="Header Files\Nodes\WorldChunkNode.h" />
+    <ClInclude Include="Header Files\RenderTarget.h" />
+    <ClInclude Include="Header Files\Scene.h" />
+    <ClInclude Include="Header Files\Shaders\BasicShader.h" />
+    <ClInclude Include="Header Files\Shaders\Shader.h" />
+    <ClInclude Include="Header Files\TCP\Packet.h" />
+    <ClInclude Include="Header Files\TCP\TCPSocket.h" />
+    <ClInclude Include="Header Files\TCP\TCPSocketSet.h" />
+    <ClInclude Include="Header Files\UI\UI.h" />
+    <ClInclude Include="Header Files\UI\UIElement.h" />
+    <ClInclude Include="Header Files\UI\UIString.h" />
+    <ClInclude Include="Header Files\Utils\CallbackManager.h" />
+    <ClInclude Include="Header Files\Utils\ContentManager.h" />
+    <ClInclude Include="Header Files\Utils\Utils.h" />
+    <ClInclude Include="Header Files\Utils\WMath.h" />
+    <ClInclude Include="Header Files\VertexArray.h" />
+    <ClInclude Include="Header Files\Viewport.h" />
+    <ClInclude Include="Header Files\Waypoint.h" />
+    <ClInclude Include="Header Files\Wrench.h" />
+    <ClInclude Include="Lib\GLee\GLee.h" />
+    <ClInclude Include="Lib\HappyHTTP\happyhttp.h" />
+    <ClInclude Include="Lib\SDL_net\begin_code.h" />
+    <ClInclude Include="Lib\SDL_net\close_code.h" />
+    <ClInclude Include="Lib\SDL_net\SDLnetsys.h" />
+    <ClInclude Include="Lib\SDL_net\SDL_net.h" />
+    <ClInclude Include="Lib\SOIL\image_DXT.h" />
+    <ClInclude Include="Lib\SOIL\image_helper.h" />
+    <ClInclude Include="Lib\SOIL\SOIL.h" />
+    <ClInclude Include="Lib\SOIL\stbi_DDS_aug.h" />
+    <ClInclude Include="Lib\SOIL\stbi_DDS_aug_c.h" />
+    <ClInclude Include="Lib\SOIL\stb_image_aug.h" />
+    <ClInclude Include="Lib\TinyXML\tinyxml.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
